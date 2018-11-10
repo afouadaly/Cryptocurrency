@@ -3,10 +3,10 @@ A simplified implementation of a cryptocurrency.
 
 Classes in brief:
 
-Transaction
+Transaction ->
 Represents a transaction that has a unique id.
 
-Node
+Node ->
 Represents a user in our simulated cryptocurrency network. Each node has:
 a list of transactions that it either made or had received/ heard of through network announcements.
 a cache of blocks it created or had received/ heard of through network announcements.
@@ -14,7 +14,7 @@ a private key (generated using key pair generator)
 a public key (generated using key pair generator) that a node can be identified with, however we left the nodes identified by unique labels so that it is easier for eye inspection when testing.
 its version of the blockchain.
 
-Graph
+Graph ->
 Represents the network and contains the bulk of our work and the most important methods used.
 The graph has
 an adjacency list that maps each node to its direct neighbors. The graph connection is hard coded in the main method and will be further explained in the ‘running the code’ section.
